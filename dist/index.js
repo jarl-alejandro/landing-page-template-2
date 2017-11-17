@@ -10,6 +10,8 @@ $(document).ready(function() {
     let sectionThreeChild = Array.from($(".section-three__wrapper .child"));
     let animate = false;
     let windowHeight = $(window).scrollTop();
+    const changed = "hello" + 304201;
+    var hello = 21849;
 
 
     // $(window).scroll(() => {
@@ -23,9 +25,9 @@ $(document).ready(function() {
     //             }, 250 * (i + 1));
     //         });
     //     } else {
-    //         // $('.section-three__wrapper .card').each(function(i, value) {
-    //         //     $(value).removeClass('is-showing');
-    //         // });
+    //         $('.section-three__wrapper .card').each(function(i, value) {
+    //             $(value).removeClass('is-showing');
+    //         });
     //     }
     // });
 
