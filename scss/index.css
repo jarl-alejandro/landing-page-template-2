@@ -15,16 +15,6 @@ body {
   background-color: var(--bg);
   overflow-x: hidden; }
 
-.deco-1 {
-  position: absolute;
-  left: 65%;
-  top: -24%;
-  z-index: -1; }
-  .deco-1 svg {
-    opacity: 0.4;
-    width: 450px;
-    fill: var(--main); }
-
 .deco {
   position: absolute; }
   .deco img {
@@ -33,8 +23,11 @@ body {
 
 nav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 15px; }
+  padding: 15px;
+  position: relative;
+  z-index: 999; }
   nav .logo {
     margin: 0 15px;
     animation: bounce 2s ease infinite alternate; }
@@ -138,6 +131,14 @@ section {
       font-size: 30px; }
   .section-one p {
     text-align: center; }
+  .section-one .deco {
+    left: 65%;
+    top: -24%;
+    z-index: -1; }
+    .section-one .deco svg {
+      opacity: 0.4;
+      width: 450px;
+      fill: var(--main); }
 
 .section-two {
   flex-direction: row;
@@ -215,20 +216,13 @@ section {
     flex-direction: column;
     align-items: center;
     width: 250px;
-    margin: 50px 0;
-    opacity: 0;
-    transition: 0.5s all ease;
-    transform: translateY(50px); }
+    margin: 25px 0; }
     .section-three__wrapper .card img {
       width: 60px; }
     .section-three__wrapper .card p {
       font-size: 17px;
       font-family: 'Barlow', sans-serif;
       color: var(--text); }
-  .section-three__wrapper .card.is-showing {
-    opacity: 1;
-    transition: 0.5s all ease;
-    transform: translateY(0); }
 
 .section-four__wrapper {
   max-width: 35%; }
@@ -312,6 +306,9 @@ footer {
   h1 {
     margin: 0;
     padding: 0; }
+
+  .deco {
+    display: none; }
 
   nav .logo {
     margin: 0; }
