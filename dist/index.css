@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 :root {
   --bg: white;
-  --main: #5FB0B7;
+  --main: #67C6BA;
   --text: #333;
   --border: #AAA;
   --size: calc(100% / 3); }
@@ -134,11 +134,10 @@ section {
     text-align: center; }
   .section-one .deco {
     left: 65%;
-    top: -24%;
+    top: 24%;
     z-index: -1; }
     .section-one .deco svg {
       opacity: 0.4;
-      width: 450px;
       fill: var(--main); }
 
 .section-two {

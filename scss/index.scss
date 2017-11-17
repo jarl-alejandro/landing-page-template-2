@@ -4,7 +4,7 @@
 
 :root {
 	--bg: white;
-	--main: #5FB0B7;
+	--main: #67C6BA;
 	--text: #333;
 	--border: #AAA;
 	--size: calc(100% / 3);
@@ -189,12 +189,11 @@ section {
 
 	.deco {
 	left: 65%;
-	top: -24%;
+	top: 24%;
 	z-index: -1;
-
 	svg {
 		opacity: 0.4;
-		width: 450px;
+		// width: 450px;
 		fill: var(--main);
 	}
 }
