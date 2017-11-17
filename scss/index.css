@@ -273,9 +273,11 @@ footer {
       padding-bottom: 20px;
       margin: 0 30px;
       flex-direction: column;
-      align-items: flex-start; }
+      align-items: flex-start;
+      justify-content: center; }
       footer .footer-wrapper .child a, footer .footer-wrapper .child p {
-        color: white; }
+        color: white;
+        margin: 5px 0; }
       footer .footer-wrapper .child ul {
         list-style-type: none;
         display: flex;

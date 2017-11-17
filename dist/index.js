@@ -25,9 +25,9 @@ $(document).ready(function() {
                 }, 250 * (i + 1));
             });
         } else {
-            $('.section-three__wrapper .card').each(function(i, value) {
-                $(value).removeClass('is-showing');
-            });
+            // $('.section-three__wrapper .card').each(function(i, value) {
+            //     $(value).removeClass('is-showing');
+            // });
         }
     });
 
