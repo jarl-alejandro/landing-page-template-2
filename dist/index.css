@@ -16,10 +16,13 @@ body {
   overflow-x: hidden; }
 
 .deco {
-  position: absolute; }
-  .deco img {
-    box-shadow: 3px 3px 20px 0 rgba(51, 51, 51, 0.2);
-    width: 500px; }
+  position: absolute;
+  z-index: -1; }
+  .deco svg {
+    opacity: 0.4; }
+
+.desc, .child {
+  font-family: 'Barlow', sans-serif; }
 
 nav {
   display: flex;
@@ -134,11 +137,7 @@ section {
     text-align: center; }
   .section-one .deco {
     left: 65%;
-    top: 24%;
-    z-index: -1; }
-    .section-one .deco svg {
-      opacity: 0.4;
-      fill: var(--main); }
+    top: 24%; }
 
 .section-two {
   flex-direction: row;
@@ -167,21 +166,10 @@ section {
   top: 18%;
   left: 23%; }
 
-.section-four .deco {
-  top: 10%;
-  left: 60%; }
-
-.deco {
-  position: absolute;
-  z-index: -1; }
-  .deco svg {
-    opacity: 0.4; }
-
 .section-three, .section-four {
   justify-content: center;
   position: relative; }
   .section-three h1, .section-four h1 {
-    font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Playfair Display', serif;
     color: var(--main);
     font-size: 27px;
@@ -193,12 +181,14 @@ section {
 
 .section-four {
   padding-bottom: 150px; }
+  .section-four .deco {
+    top: 10%;
+    left: 60%; }
 
 .child {
   display: flex;
   align-items: center;
   color: var(--text);
-  font-family: 'Barlow', sans-serif;
   font-size: 18px;
   font-weight: 300; }
 
@@ -244,7 +234,6 @@ hr {
   border-top: 1px solid var(--border); }
 
 .desc {
-  font-family: 'Barlow', sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: var(--text); }
