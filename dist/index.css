@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 :root {
   --bg: white;
@@ -130,9 +129,10 @@ section {
   .section-one__header {
     width: 85%; }
     .section-one__header p:first-child {
-      font-family: 'Playfair Display', serif;
-      color: var(--main);
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: 400;
+      font-family: "Playfair Display", serif;
+      color: var(--main); }
   .section-one p {
     text-align: center; }
   .section-one .deco {
@@ -157,10 +157,10 @@ section {
     margin: 30px;
     transition: 0.7s all ease; }
   .section-two .heading {
-    font-family: 'Playfair Display', serif;
-    color: var(--main);
     font-size: 27px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    color: var(--main); }
 
 .section-three .deco {
   top: 18%;
@@ -210,9 +210,10 @@ section {
     .section-three__wrapper .card img {
       width: 60px; }
     .section-three__wrapper .card p {
+      color: var(--text);
       font-size: 17px;
-      font-family: 'Barlow', sans-serif;
-      color: var(--text); }
+      font-weight: 400;
+      font-family: "Barlow", sans-serif; }
 
 .section-four__wrapper {
   max-width: 35%; }

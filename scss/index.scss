@@ -9,6 +9,15 @@
 	--size: calc(100% / 3);
 }
 
+$playfair: 'Playfair Display', serif;
+$barlow: 'Barlow', sans-serif;
+
+@mixin fontStyle($size, $family, $weight: 400){
+	font-size: $size;
+	font-weight: $weight;
+	font-family: $family;
+}
+
 
 body {
 	position: relative;
@@ -180,9 +189,8 @@ section {
 	&__header {
 		width: 85%;
 		p:first-child {
-			font-family: 'Playfair Display', serif;
+			@include fontStyle(30px,$playfair);
 			color: var(--main);
-			font-size: 30px;
 		}
 	}	
 
@@ -220,10 +228,8 @@ section {
 	}
 
 	.heading {
-		font-family: 'Playfair Display', serif;
+		@include fontStyle(27px, $playfair, 300);
 		color: var(--main);
-		font-size: 27px;
-		font-weight: 300;
 	}
 }
 
@@ -292,9 +298,8 @@ section {
 		}
 
 		p {
-			font-size: 17px;
-			font-family: 'Barlow', sans-serif;
 			color: var(--text);
+			@include fontStyle(17px, $barlow);
 		}
 
 	}
