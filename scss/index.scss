@@ -38,10 +38,6 @@ body {
 	}
 }
 
-.desc {
-	font-family: 'Barlow', sans-serif;
-}
-
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -66,8 +62,7 @@ nav {
 		transition: 0.7s all ease;
 
 		a {
-			font-family: 'Barlow', sans-serif;
-			font-weight: 300;
+			@include fontStyle(16px, $barlow, 300);
 			color: var(--text);
 			margin: 10px 15px;
 			text-decoration: none;
