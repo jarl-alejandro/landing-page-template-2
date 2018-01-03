@@ -245,11 +245,9 @@ section {
 	justify-content: center;
 	position: relative;
 	h1 {
-		font-family: 'Playfair Display', serif;
 		color: var(--main);
-		font-size: 27px;
-		font-weight: 300;
 		margin-bottom: 0;
+		@include fontStyle(27px, $playfair, 300);
 	}
 
 	p {
