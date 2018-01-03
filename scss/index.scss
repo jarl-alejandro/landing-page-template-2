@@ -38,7 +38,7 @@ body {
 	}
 }
 
-.desc, .child {
+.desc {
 	font-family: 'Barlow', sans-serif;
 }
 
@@ -269,8 +269,7 @@ section {
 	display: flex;
 	align-items: center;
 	color: var(--text);
-	font-size: 18px;
-	font-weight: 300;
+	@include fontStyle(18px, $barlow, 300);
 }
 
 .section-three__wrapper, .section-four__wrapper {
@@ -331,9 +330,8 @@ hr {
 
 
 .desc {
-	font-size: 18px;
-	font-weight: 300;
 	color: var(--text);
+	@include fontStyle(18px, $barlow, 300);
 }
 
 

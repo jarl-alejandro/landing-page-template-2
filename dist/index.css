@@ -20,7 +20,7 @@ body {
   .deco svg {
     opacity: 0.4; }
 
-.desc, .child {
+.desc {
   font-family: 'Barlow', sans-serif; }
 
 nav {
@@ -190,7 +190,8 @@ section {
   align-items: center;
   color: var(--text);
   font-size: 18px;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "Barlow", sans-serif; }
 
 .section-three__wrapper, .section-four__wrapper {
   display: flex;
@@ -235,9 +236,10 @@ hr {
   border-top: 1px solid var(--border); }
 
 .desc {
+  color: var(--text);
   font-size: 18px;
   font-weight: 300;
-  color: var(--text); }
+  font-family: "Barlow", sans-serif; }
 
 footer {
   width: 100%;
