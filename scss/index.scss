@@ -378,7 +378,7 @@ footer {
 .copyright {
 	display: flex;
 	padding: 15px 50px;
-	@include fontStyle(17px, $barlow, 300);
+	@include fontStyle(15px, $barlow, 300);
 
 	p {
 		color: white;
