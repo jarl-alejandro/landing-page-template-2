@@ -281,12 +281,6 @@ footer {
   .copyright p {
     color: white; }
 
-.in-view {
-  opacity: 1;
-  transform: translate(0, 0);
-  transition: 1s all;
-  -webkit-transform: translate3d(0, 0, 0); }
-
 @media (max-width: 900px) {
   section {
     padding: 25px 0; }
